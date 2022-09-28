@@ -74,8 +74,8 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     margin: 4rem auto 4rem;
-    padding: 2em;
     gap: .5em;
+    height: calc(100vh - 4rem - 6rem);
     overflow-y: auto;
     position: relative;
 }
@@ -126,6 +126,18 @@ footer{
     flex: 0 1 auto;
 }
 
+.icon-content:hover{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1em;
+    color: white;
+    flex: 0 1 auto;
+    background-color: grey;
+    font-size: 1em;
+}
+
 .icon i{
     font-size: 1.5em;
 }
@@ -145,4 +157,5 @@ footer{
     display: flex;
     height: 100%;
     background-color: grey;
+    font-size: 1em;
 }
