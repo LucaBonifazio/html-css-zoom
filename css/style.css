@@ -5,10 +5,110 @@
 }
 
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 img{
     width: 100%;
 }
 
+/* generals */
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/* header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    z-index: 99;
+}
+
+.fixup {
+    background-color: grey;
+    border-radius: .5em;
+    padding: .5em;
+    font-size: small;
+}
+
+.view{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+.size{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.view:hover{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 1em;
+}
+
+.size:hover{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 1em;
+}
+
+/* main */
+
+.main{
+    max-width: 1200px;
+}
+
+.box-cam{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 4rem auto 4rem;
+    background-color: brown;
+    gap: .5em;
+    overflow: auto;
+    position: relative;
+    overflow: auto;
+}
+
+.cam{
+    display: flex;
+    position: relative;
+}
+
+.cam-text{
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    color: white;
+    background-color: rgba(82, 80, 80, 0.7);
+}
+
+
+
+
+/* footer */
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    background-color: rgb(21, 10, 230);
+}
