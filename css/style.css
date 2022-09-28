@@ -69,25 +69,21 @@ header{
 
 /* main */
 
-.main{
-    max-width: 1200px;
-}
-
 .box-cam{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
     margin: 4rem auto 4rem;
-    background-color: brown;
+    padding: 2em;
     gap: .5em;
-    overflow: auto;
+    overflow-y: auto;
     position: relative;
-    overflow: auto;
 }
 
 .cam{
     display: flex;
     position: relative;
+    flex-basis: ((100% / 7) - 2em);
 }
 
 .cam-text{
@@ -105,10 +101,48 @@ header{
 
 footer{
     display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     height: 4rem;
-    background-color: rgb(21, 10, 230);
+    z-index: 99;
+    background-color: rgb(64, 64, 65);
+}
+
+.icon-box{
+    display: flex;
+}
+
+.icon-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1em;
+    color: white;
+    font-size: .7em;
+    flex: 0 1 auto;
+}
+
+.icon i{
+    font-size: 1.5em;
+}
+
+.fa-share-from-square{
+    color: rgb(54, 196, 54);
+}
+
+.end-meeting{
+    color: rgb(154, 18, 18);
+    display: flex;
+    height: 100%;
+}
+
+.end-meeting:hover{
+    color: rgb(154, 18, 18);
+    display: flex;
+    height: 100%;
+    background-color: grey;
 }
